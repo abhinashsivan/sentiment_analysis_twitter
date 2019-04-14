@@ -14,7 +14,7 @@ auth.set_access_token(access_token, access_token_secret)
 
 api = tweepy.API(auth)
 
-tweets = api.search('Lucifer', count=200)
+tweets = api.search('KEYWORD', count=200)
 
 
 data = pd.DataFrame(data=[tweet.text for tweet in tweets], columns=['Tweets'])
